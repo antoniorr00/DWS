@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+
+    <form>
+        <fieldset>
+            <legend>Formulario de registro</legend>
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                <label for="hombre">Hombre</label><br>
+
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+</body>
+</html>
